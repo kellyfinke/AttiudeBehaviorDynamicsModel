@@ -97,6 +97,18 @@ $ julia path/to/repo/setup.jl
 
 Expected installation and precompilation time is 5 minutes.
 
+## Sample Simulation Data
+We provide low-resolution versions of the simulations used to create all figures in the main text of the article.
+
+Due to file size, simulation data is hosted externally:
+
+[Download dataset (Zenodo)](LINK)
+
+To reproduce figures:
+1. Download and extract the dataset
+2. Place in `AgentBasedModel/simulations/compressedSims`
+3. Run `scripts/reproduce_figures.ipynb` (instructions below)
+
 ## Agent Based Model
 
 ### Reproducing figures from the article
@@ -134,7 +146,7 @@ We suggest running the file cell by cell in order (using Shift+Enter or by click
 
 In each section, you can select which specific result you'd like to produce by setting the `whichPlot` variable. E.g., in the Timeseries section, setting `whichPlot = "Fig. 2Ai"` will produce the plot from Fig. 2Ai.
 
-For timeseries plots, you'll run simulations in real time in the jupyter notebook file. For all other plots, you'll load pre-run simulations. We provide all pre-generated simulation data in the `simulations/compressedSims/sampleSimulations` folder. To save space, all pre-generated simulation data is of a lower resolution than those displayed in the article, and we only save behavior (not attitude) data for 2D plots. You can also choose to run these larger simulations yourself (see "Running Simulations" below).
+For timeseries plots, you'll run simulations in real time in the jupyter notebook file. For all other plots, you'll load pre-run simulations. To save space, all pre-generated simulation data is of a lower resolution than those displayed in the article, and we only save behavior (not attitude) data for 2D plots. See **Sample Simulation Data** above for instructions on dowloading this data. You can also choose to run these larger simulations yourself (see "Running Simulations" below).
 
 ### Running Simulations
 
